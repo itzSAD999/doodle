@@ -1,0 +1,11 @@
+/* Handled via mosaic global styles and inline styles in Industries.tsx */
+
+@media (max-width: 1023px) {
+  .industries-mosaic {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+  .industry-mosaic-card {
+    min-height: 500px;
+  }
+}

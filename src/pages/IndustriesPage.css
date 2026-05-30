@@ -1,0 +1,148 @@
+.industries-page-vertical {
+  background-color: white;
+  min-height: 100vh;
+  padding-top: 80px; /* offset header */
+}
+
+/* Dark Contact Banner */
+.dark-contact-banner {
+  background-color: #0a0e17;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.stars-layer {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 50px 160px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 160px 120px, #ffffff, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.6;
+}
+
+.dark-contact-banner .relative-z {
+  position: relative;
+  z-index: 2;
+}
+
+.dark-contact-banner h2 {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 24px;
+}
+
+/* Slices Section */
+.industries-slices-section {
+  position: relative;
+  padding: 100px 0 0 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.giant-watermark {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 14vw;
+  font-weight: 900;
+  color: #f0f0f0; /* very faint gray */
+  z-index: 1;
+  pointer-events: none;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+
+.slices-container {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  min-height: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+.industry-slice {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  transition: flex 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.industry-slice:last-child {
+  border-right: none;
+}
+
+.industry-slice:hover {
+  flex: 1.5; /* expands slightly */
+}
+
+.slice-bg {
+  position: absolute;
+  inset: -20%; /* allows for panning effect without borders showing */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.industry-slice:hover .slice-bg {
+  transform: scale(1.05);
+}
+
+.slice-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 106, 218, 0.7); /* Deep blue overlay */
+  mix-blend-mode: multiply;
+  transition: background-color 0.4s ease;
+}
+
+.industry-slice:hover .slice-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* clears up on hover */
+}
+
+.slice-title {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  writing-mode: horizontal-tb;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.industry-slice:hover .slice-title {
+  color: white;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 1024px) {
+  .slice-title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+  }
+  .industry-slice:hover .slice-title {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}

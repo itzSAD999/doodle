@@ -1,0 +1,71 @@
+.value-prop-section {
+  padding: 100px 0;
+  background: transparent;
+  position: relative;
+  z-index: 5;
+}
+
+.value-prop-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .value-prop-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.vp-card {
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  /* Glassmorphism styling */
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.vp-icon {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  color: var(--primary-color);
+}
+
+.vp-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 16px;
+}
+
+.vp-card p {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Specific accent colors for the icons if desired */
+.vp-card:nth-child(1) .vp-icon { color: #006ADA; }
+.vp-card:nth-child(2) .vp-icon { color: #E91E63; }
+.vp-card:nth-child(3) .vp-icon { color: #00A651; }

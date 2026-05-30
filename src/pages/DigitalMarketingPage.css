@@ -1,0 +1,246 @@
+.digital-marketing-page {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.dm-hero {
+  padding: 180px 0 80px 0;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dm-hero-subtitle {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  color: #d0d0d0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.dm-hero-title {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  letter-spacing: -1px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .dm-hero-title { font-size: 80px; }
+}
+
+.dm-hero-desc {
+  font-size: 32px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.dm-hero-text {
+  font-size: 18px;
+  color: #777;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Capabilities Stack */
+.dm-capabilities {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.dm-cap-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  border-bottom: 1px solid #f5f5f5;
+  gap: 40px;
+}
+
+.dm-cap-row:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .dm-cap-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .dm-cap-row.reverse {
+    /* If you want alternating layout left/right, uncomment: */
+    /* flex-direction: row-reverse; */
+  }
+}
+
+.dm-cap-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.dm-cap-title {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  color: #e91e63; /* Pink/Red from screenshot */
+  margin-bottom: 16px;
+}
+
+.dm-cap-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 32px;
+}
+
+/* Checkmarks Grid */
+.dm-check-list-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dm-check-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .dm-check-row {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .dm-check-item {
+    flex: 1;
+  }
+}
+
+.dm-check-item {
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.dm-check-icon {
+  color: #333;
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+/* Isometric Visuals */
+.dm-cap-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.iso-graphic {
+  width: 100%;
+  height: auto;
+  max-width: 280px;
+  color: #333; /* Dark wireframe lines */
+}
+
+/* Recent Work Side-by-Side */
+.dm-recent-work {
+  padding: 100px 0;
+  background-color: #fafafa;
+}
+
+.dm-recent-title {
+  font-size: 32px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.dm-case-study {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+@media (min-width: 1024px) {
+  .dm-case-study {
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+.dm-case-image {
+  flex: 1;
+}
+
+.dm-case-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.dm-case-content {
+  flex: 1;
+  padding: 40px;
+}
+
+@media (min-width: 1024px) {
+  .dm-case-content {
+    padding: 0 60px;
+  }
+}
+
+.dm-case-category {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.dm-case-headline {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 900;
+  color: #111;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  max-width: 400px;
+}
+
+@media (min-width: 1024px) {
+  .dm-case-headline { font-size: 40px; }
+}
+
+.dm-case-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: gap 0.3s ease;
+}
+
+.dm-case-link:hover {
+  gap: 16px;
+}

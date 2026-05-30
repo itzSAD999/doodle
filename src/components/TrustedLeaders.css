@@ -1,0 +1,87 @@
+.trusted-section {
+  padding: 40px 0;
+  position: relative;
+  z-index: 10;
+  width: 100vw;
+  background: var(--bg-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trusted-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.trusted-subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Fade effect using the pill's translucent background color */
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.marquee {
+  overflow: hidden;
+  display: flex;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  animation: scrollTextMarquee 40s linear infinite;
+  padding: 0 40px;
+}
+
+.logo-text-item {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  opacity: 0.3;
+  transition: opacity 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.logo-text-item:hover {
+  opacity: 1;
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+@keyframes scrollTextMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
