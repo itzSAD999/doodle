@@ -47,26 +47,26 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                 <div className="service-group">
                   <h4>Digital Transformation</h4>
                   <ul>
-                    <li><Link to="/services" onClick={onClose}>Technology & Ecosystem Audit</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Digital Strategy</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Digital Marketing</Link></li>
+                    <li><Link to="/services/digital-transformation/technology-ecosystem-audit" onClick={onClose}>Technology & Ecosystem Audit</Link></li>
+                    <li><Link to="/services/digital-transformation/digital-strategy" onClick={onClose}>Digital Strategy</Link></li>
+                    <li><Link to="/services/digital-transformation/digital-marketing" onClick={onClose}>Digital Marketing</Link></li>
                   </ul>
                 </div>
                 
                 <div className="service-group">
                   <h4>Web Technology Development</h4>
                   <ul>
-                    <li><Link to="/services" onClick={onClose}>Content Management Systems</Link></li>
-                    <li><Link to="/services" onClick={onClose}>e-Commerce Platforms</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Custom Web Applications</Link></li>
+                    <li><Link to="/services/web-technology/content-management-systems" onClick={onClose}>Content Management Systems</Link></li>
+                    <li><Link to="/services/web-technology/e-commerce-platforms" onClick={onClose}>e-Commerce Platforms</Link></li>
+                    <li><Link to="/services/web-technology/custom-web-applications" onClick={onClose}>Custom Web Applications</Link></li>
                   </ul>
                 </div>
 
                 <div className="service-group">
                   <h4>Performance Engineering</h4>
                   <ul>
-                    <li><Link to="/services" onClick={onClose}>Quality assurance as a service</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Cloud Architecture Engineering & Optimization</Link></li>
+                    <li><Link to="/services/performance-engineering/quality-assurance-as-a-service" onClick={onClose}>Quality assurance as a service</Link></li>
+                    <li><Link to="/services/performance-engineering/cloud-architecture-optimization" onClick={onClose}>Cloud Architecture Engineering & Optimization</Link></li>
                   </ul>
                 </div>
               </div>
@@ -76,20 +76,20 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                 <div className="service-group">
                   <h4>Data & Analytics</h4>
                   <ul>
-                    <li><Link to="/services" onClick={onClose}>Branding</Link></li>
-                    <li><Link to="/services" onClick={onClose}>UX Strategy</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Mobile & Web Design</Link></li>
+                    <li><Link to="/services/ui-ux-design/branding" onClick={onClose}>Branding</Link></li>
+                    <li><Link to="/services/ui-ux-design/ux-strategy" onClick={onClose}>UX Strategy</Link></li>
+                    <li><Link to="/services/ui-ux-design/mobile-web-design" onClick={onClose}>Mobile & Web Design</Link></li>
                   </ul>
                 </div>
 
                 <div className="service-group">
                   <h4>Innovation</h4>
                   <ul>
-                    <li><Link to="/services" onClick={onClose}>Augmented & Virtual Reality</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Machine Learning & AI</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Internet of Things</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Blockchain</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Cyber Security</Link></li>
+                    <li><Link to="/services/innovation-technology/augmented-virtual-reality" onClick={onClose}>Augmented & Virtual Reality</Link></li>
+                    <li><Link to="/services/innovation-technology/machine-learning-ai" onClick={onClose}>Machine Learning & AI</Link></li>
+                    <li><Link to="/services/innovation-technology/internet-of-things" onClick={onClose}>Internet of Things</Link></li>
+                    <li><Link to="/services/innovation-technology/blockchain" onClick={onClose}>Blockchain</Link></li>
+                    <li><Link to="/services/innovation-technology/cyber-security" onClick={onClose}>Cyber Security</Link></li>
                   </ul>
                 </div>
               </div>
@@ -99,22 +99,22 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                 <div className="service-group">
                   <h4>Mobile Engineering</h4>
                   <ul>
-                    <li><Link to="/services" onClick={onClose}>Android Development</Link></li>
-                    <li><Link to="/services" onClick={onClose}>IOS Development</Link></li>
-                    <li><Link to="/services" onClick={onClose}>React Native Development</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Wearable Development</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Hybrid Development</Link></li>
+                    <li><Link to="/services/mobile-engineering/android-development" onClick={onClose}>Android Development</Link></li>
+                    <li><Link to="/services/mobile-engineering/ios-development" onClick={onClose}>IOS Development</Link></li>
+                    <li><Link to="/services/mobile-engineering/react-native-development" onClick={onClose}>React Native Development</Link></li>
+                    <li><Link to="/services/mobile-engineering/wearable-development" onClick={onClose}>Wearable Development</Link></li>
+                    <li><Link to="/services/mobile-engineering/hybrid-development" onClick={onClose}>Hybrid Development</Link></li>
                   </ul>
                 </div>
 
                 <div className="service-group">
                   <h4>Enterprise Application Development</h4>
                   <ul>
-                    <li><Link to="/services" onClick={onClose}>Enterprise Resource Planning</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Point of Sale</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Customer Relationship Management</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Data Warehousing & Workflow Automation</Link></li>
-                    <li><Link to="/services" onClick={onClose}>Business Intelligence</Link></li>
+                    <li><Link to="/services/enterprise-app/enterprise-resource-planning" onClick={onClose}>Enterprise Resource Planning</Link></li>
+                    <li><Link to="/services/enterprise-app/point-of-sale" onClick={onClose}>Point of Sale</Link></li>
+                    <li><Link to="/services/enterprise-app/customer-relation-management" onClick={onClose}>Customer Relationship Management</Link></li>
+                    <li><Link to="/services/enterprise-app/data-workflow-automation" onClick={onClose}>Data Warehousing & Workflow Automation</Link></li>
+                    <li><Link to="/services/enterprise-app/business-intelligence" onClick={onClose}>Business Intelligence</Link></li>
                   </ul>
                 </div>
               </div>

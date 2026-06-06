@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -15,48 +16,48 @@ const Footer: React.FC = () => {
           <div className="footer-column">
             <h4>Industries</h4>
             <ul>
-              <li><a href="/industries">Education</a></li>
-              <li><a href="/industries">Fashion</a></li>
-              <li><a href="/industries">Financial services</a></li>
-              <li><a href="/industries">Healthcare</a></li>
-              <li><a href="/industries">Hospitality and Leisure</a></li>
-              <li><a href="/industries">Retail</a></li>
-              <li><a href="/industries">Telecommunication</a></li>
-              <li><a href="/industries">Transport and Logistics</a></li>
+              <li><Link to="/industries">Education</Link></li>
+              <li><Link to="/industries">Fashion</Link></li>
+              <li><Link to="/industries">Financial services</Link></li>
+              <li><Link to="/industries">Healthcare</Link></li>
+              <li><Link to="/industries">Hospitality and Leisure</Link></li>
+              <li><Link to="/industries">Retail</Link></li>
+              <li><Link to="/industries">Telecommunication</Link></li>
+              <li><Link to="/industries">Transport and Logistics</Link></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h4>Services</h4>
             <ul>
-              <li><a href="/services">Digital Transformation</a></li>
-              <li><a href="/services">UI/UX & Design Thinking</a></li>
-              <li><a href="/services">Mobile Engineering</a></li>
-              <li><a href="/services">Web Technology Development</a></li>
-              <li><a href="/services">Innovation</a></li>
-              <li><a href="/services">Enterprise Application Development</a></li>
-              <li><a href="/services">Performance Engineering</a></li>
+              <li><Link to="/services/digital-transformation">Digital Transformation</Link></li>
+              <li><Link to="/services/ui-ux-design">UI/UX & Design Thinking</Link></li>
+              <li><Link to="/services/mobile-engineering">Mobile Engineering</Link></li>
+              <li><Link to="/services/web-technology">Web Technology Development</Link></li>
+              <li><Link to="/services/innovation-technology">Innovation</Link></li>
+              <li><Link to="/services/enterprise-app">Enterprise Application Development</Link></li>
+              <li><Link to="/services/performance-engineering">Performance Engineering</Link></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h4>About</h4>
             <ul>
-              <li><a href="/about">Leadership</a></li>
-              <li><a href="/about">Press</a></li>
-              <li><a href="/about">Contact Us</a></li>
-              <li><a href="/success-stories">Success Stories</a></li>
-              <li><a href="/blogs">Blogs</a></li>
-              <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
-              <li><a href="/csr-policy">CSR Policy</a></li>
+              <li><Link to="/about">Leadership</Link></li>
+              <li><Link to="/about">Press</Link></li>
+              <li><Link to="/contactus">Contact Us</Link></li>
+              <li><Link to="/success-stories">Success Stories</Link></li>
+              <li><Link to="/blogs">Blogs</Link></li>
+              <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
+              <li><Link to="/csr-policy">CSR Policy</Link></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Careers</h4>
             <ul>
-              <li><a href="/careers/openings">View Openings</a></li>
-              <li><a href="/careers/interns">Internship</a></li>
+              <li><Link to="/careers/openings">View Openings</Link></li>
+              <li><Link to="/careers/interns">Internship</Link></li>
             </ul>
           </div>
         </div>
