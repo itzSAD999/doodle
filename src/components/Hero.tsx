@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero: React.FC = () => {
@@ -9,20 +10,20 @@ const Hero: React.FC = () => {
       
       <div className="hero-content">
         <div className="hero-text">
-          <h1 className="hero-title">Engineer Hyper-Growth.<br/>Accelerate What's Next.</h1>
+          <h1 className="hero-title">Engineer <span className="hero-gradient-text">Hyper-Growth.</span><br/>Accelerate What's Next.</h1>
           <p className="hero-subtitle">
             AI-powered enterprise transformation for fast-moving innovators across manufacturing, supply chain, logistics, retail, and more.
           </p>
           
           <div className="hero-actions">
-            <button className="btn btn-white">
+            <Link to="/contactus" className="hero-btn hero-btn-secondary">
               <span>Schedule a Call</span>
               <span className="arrow">→</span>
-            </button>
-            <button className="btn btn-primary">
+            </Link>
+            <Link to="/services" className="hero-btn hero-btn-primary">
               <span>Explore Solutions</span>
               <span className="arrow">→</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
