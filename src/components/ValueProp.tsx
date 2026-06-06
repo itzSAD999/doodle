@@ -16,7 +16,7 @@ const ValueProp: React.FC = () => {
     { client: 'Flyy', sector: 'Transport', quote: 'doodleblue\'s technical strength is their biggest plus point. Our experience with them has been very positive...', author: 'Yasar Arafath, Head of software division' }
   ];
 
-  const partners = ['IBM', 'Snowflake', 'Google Cloud', 'AWS'];
+
 
   return (
     <section className="mosaic-section">

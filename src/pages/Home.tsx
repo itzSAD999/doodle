@@ -12,6 +12,7 @@ const Home: React.FC = () => {
       <TrustedLeaders />
       <Services />
       <Industries />
+      <ValueProp />
     </div>
   );
 };
