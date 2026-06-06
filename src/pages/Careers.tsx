@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
 import './Careers.css';
 
 const Careers: React.FC = () => {
@@ -203,19 +204,19 @@ const Careers: React.FC = () => {
         <section className="careers-social">
           <div className="careers-social-grid">
             <a href="https://www.instagram.com/doodleblue/" target="_blank" rel="noreferrer" className="careers-social-block careers-insta">
-              <span className="careers-social-icon">📸</span>
+              <span className="careers-social-icon"><Instagram size={32} /></span>
               <div>Follow us on<br /><strong>Instagram</strong></div>
             </a>
             <a href="https://www.facebook.com/doodleblue.Innovations/" target="_blank" rel="noreferrer" className="careers-social-block careers-fb">
-              <span className="careers-social-icon">👍</span>
+              <span className="careers-social-icon"><Facebook size={32} /></span>
               <div>Like us on<br /><strong>Facebook</strong></div>
             </a>
             <a href="https://twitter.com/doodleblue7" target="_blank" rel="noreferrer" className="careers-social-block careers-twitter">
-              <span className="careers-social-icon">🐦</span>
+              <span className="careers-social-icon"><Twitter size={32} /></span>
               <div>Follow us on<br /><strong>Twitter</strong></div>
             </a>
             <a href="https://www.linkedin.com/company/doodleblue/" target="_blank" rel="noreferrer" className="careers-social-block careers-linkedin">
-              <span className="careers-social-icon">💼</span>
+              <span className="careers-social-icon"><Linkedin size={32} /></span>
               <div>Connect us on<br /><strong>LinkedIn</strong></div>
             </a>
           </div>

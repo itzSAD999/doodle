@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -69,10 +70,10 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="footer-socials" style={{ display: 'flex', gap: '16px', color: 'var(--primary-color)', fontWeight: 600, textTransform: 'uppercase', fontSize: '14px' }}>
-            <a href="https://www.instagram.com/doodleblue/" target="_blank" rel="noopener noreferrer">insta</a>
-            <a href="https://www.linkedin.com/company/doodleblue/" target="_blank" rel="noopener noreferrer">linkedin</a>
-            <a href="https://twitter.com/doodleblue7" target="_blank" rel="noopener noreferrer">twitter</a>
-            <a href="https://www.facebook.com/doodleblue.Innovations/" target="_blank" rel="noopener noreferrer">facebook</a>
+            <a href="https://www.instagram.com/doodleblue/" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
+            <a href="https://www.linkedin.com/company/doodleblue/" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
+            <a href="https://twitter.com/doodleblue7" target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>
+            <a href="https://www.facebook.com/doodleblue.Innovations/" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
           </div>
 
           <div className="footer-copyright">
