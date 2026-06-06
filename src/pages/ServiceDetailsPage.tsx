@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { servicesData } from '../data/servicesData';
 import './ServiceDetailsPage.css';
 import '../pages/SuccessStoriesPage.css'; // Reuse Recent Work styling
+import QuickSwitchMenu from '../components/QuickSwitchMenu';
 
 const ServiceDetailsPage: React.FC = () => {
   const { serviceId } = useParams<{ serviceId: string }>();
@@ -32,16 +33,18 @@ const ServiceDetailsPage: React.FC = () => {
     },
     {
       category: 'Innovation & Growth',
-      title: `Driving 30% Revenue Growth through ${currentService.items[0] || 'Digital Strategy'}`,
+      title: `Driving 30% Revenue Growth through ${currentService.items[0]?.title || 'Digital Strategy'}`,
       img: '/outcome_growth_1780155366575.png'
     }
   ];
 
   return (
     <div className="page-wrapper service-details-page">
-      {/* Hero Section */}
-      <div className="sd-hero">
-        <div className="container sd-hero-container">
+      <QuickSwitchMenu />
+      <div className="sticky-hero-wrapper">
+        {/* Hero Section */}
+        <div className="sd-hero">
+          <div className="container sd-hero-container">
           <div className="sd-hero-left">
             <div className="sd-dropdown-container">
               <button 
@@ -60,17 +63,30 @@ const ServiceDetailsPage: React.FC = () => {
           </div>
         </div>
       </div>
+      </div>
 
-      {/* Sub Services Grid */}
-      <div className="sd-sub-services">
-        <div className="container">
+      <div className="overlay-content-wrapper">
+        {/* Sub Services Overview & Grid */}
+        <div className="sd-sub-services">
+          <div className="container">
+          {currentService.overview && (
+            <p className="sd-overview-text">{currentService.overview}</p>
+          )}
           <div className="sd-cards-grid">
             {currentService.items.map((item, idx) => (
-              <div className="sd-sub-card" key={idx}>
+              <div 
+                className="sd-sub-card" 
+                key={idx}
+                onClick={() => navigate(`/services/${currentService.slug}/${item.slug}`)}
+                style={{ cursor: 'pointer' }}
+              >
                 <div className="sd-card-icon">
                   {currentService.icon}
                 </div>
-                <h3>{item}</h3>
+                <div className="sd-card-content">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -98,6 +114,7 @@ const ServiceDetailsPage: React.FC = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
 
       {/* Fullscreen Services Switcher Overlay */}
@@ -128,15 +145,11 @@ const ServiceDetailsPage: React.FC = () => {
                         key={iIdx} 
                         onClick={(e) => {
                           e.stopPropagation();
-                          if (sub === 'Digital Marketing') {
-                            navigate('/services/digital-marketing');
-                          } else {
-                            navigate(`/services/${cat.slug}`);
-                          }
+                          navigate(`/services/${cat.slug}/${sub.slug}`);
                           setIsDropdownOpen(false);
                         }}
                       >
-                        {sub}
+                        {sub.title}
                       </li>
                     ))}
                   </ul>

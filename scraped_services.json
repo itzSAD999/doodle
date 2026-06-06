@@ -1,0 +1,61 @@
+{
+  "dt": {
+    "technology-ecosystem-audit": {
+      "title": "Technology & Ecosystem Audit Services",
+      "slug": "technology-ecosystem-audit",
+      "description": "We uncover insights and observations that can add value for a seamless integration of suites to enrich experiences.Audit technology strategy promotes greater consistency and repeatability , which are part of the fabric in delivering a digital audit.Systematic examination and verification of network security for potent control and testing.",
+      "heroTitle": "TECHNOLOGY & ECOSYSTEM AUDIT SERVICES",
+      "heroDesc": "We uncover insights and observations that can add value for a seamless integration of suites to enrich experiences.Audit technology strategy promotes greater consistency and repeatability , which are part of the fabric in delivering a digital audit.Systematic examination and verification of network security for potent control and testing."
+    },
+    "digital-strategy": {
+      "title": "Digital Strategy Services",
+      "slug": "digital-strategy",
+      "description": "Achieve visibility and sustain with comprehensive and innovative methods to reach your business goals.Validate digital strategy by choosing the right metrics, tools and expertise to develop new initiatives to enhance competitive position. Our digital strategy team takes a customized approach to create a detailed strategy that delivers desired results.",
+      "heroTitle": "DIGITAL STRATEGY SERVICES",
+      "heroDesc": "Achieve visibility and sustain with comprehensive and innovative methods to reach your business goals.Validate digital strategy by choosing the right metrics, tools and expertise to develop new initiatives to enhance competitive position. Our digital strategy team takes a customized approach to create a detailed strategy that delivers desired results."
+    },
+    "digital-marketing": {
+      "title": "Digital Marketing Services",
+      "slug": "digital-marketing",
+      "description": "Our digital marketing services provides compelling strategies that build a strong connection between brands and their potential customers which is uniquely optimized by our adroit professionals such that it provides greater brand loyalty.",
+      "heroTitle": "DIGITAL MARKETING SERVICES",
+      "heroDesc": "Our digital marketing services provides compelling strategies that build a strong connection between brands and their potential customers which is uniquely optimized by our adroit professionals such that it provides greater brand loyalty."
+    },
+    "digital-analytics": null
+  },
+  "uiux": {
+    "branding": null,
+    "ux-strategy": null,
+    "mobile-web-design": null
+  },
+  "mobile": {
+    "android-development": null,
+    "ios-development": null,
+    "react-native-development": null,
+    "wearable-development": null,
+    "hybrid-development": null
+  },
+  "web": {
+    "content-management-systems": null,
+    "e-commerce-platforms": null,
+    "custom-web-applications": null
+  },
+  "innovation": {
+    "augmented-virtual-reality": null,
+    "machine-learning-ai": null,
+    "internet-of-things": null,
+    "blockchain": null,
+    "cyber-security": null
+  },
+  "enterprise": {
+    "enterprise-resource-planning": null,
+    "point-of-sale": null,
+    "customer-relation-management": null,
+    "data-workflow-automation": null,
+    "business-intelligence": null
+  },
+  "perf": {
+    "quality-assurance-as-a-service": null,
+    "cloud-architecture-optimization": null
+  }
+}

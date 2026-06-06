@@ -8,20 +8,22 @@ const Hero: React.FC = () => {
       <div className="hero-overlay"></div>
       
       <div className="hero-content">
-        <h1 className="hero-title">Engineer Hyper-Growth.<br/>Accelerate What's Next.</h1>
-        <p className="hero-subtitle">
-          AI-powered enterprise transformation for fast-moving innovators across manufacturing, supply chain, logistics, retail, and more.
-        </p>
-        
-        <div className="hero-actions">
-          <button className="btn btn-white">
-            <span>Schedule a Call</span>
-            <span className="arrow">→</span>
-          </button>
-          <button className="btn btn-primary">
-            <span>Explore Solutions</span>
-            <span className="arrow">→</span>
-          </button>
+        <div className="hero-text">
+          <h1 className="hero-title">Engineer Hyper-Growth.<br/>Accelerate What's Next.</h1>
+          <p className="hero-subtitle">
+            AI-powered enterprise transformation for fast-moving innovators across manufacturing, supply chain, logistics, retail, and more.
+          </p>
+          
+          <div className="hero-actions">
+            <button className="btn btn-white">
+              <span>Schedule a Call</span>
+              <span className="arrow">→</span>
+            </button>
+            <button className="btn btn-primary">
+              <span>Explore Solutions</span>
+              <span className="arrow">→</span>
+            </button>
+          </div>
         </div>
       </div>
 

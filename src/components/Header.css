@@ -3,17 +3,19 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
-  padding: 20px 0;
+  z-index: 1000;
+  padding: 16px 0;
   transition: all 0.3s ease;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .header.scrolled {
-  padding: 15px 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 .header-container {
@@ -76,3 +78,4 @@
   cursor: pointer;
   display: block;
 }
+

@@ -1,71 +1,201 @@
-.value-prop-section {
-  padding: 100px 0;
-  background: transparent;
+/* ═══════════════════════════════════════════
+   ValueProp.css — Success Stories section
+   ═══════════════════════════════════════════ */
+
+.vp-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ── SUCCESS STORIES ROW ── */
+.vp-stories-row {
+  display: flex;
+  width: 100%;
+  min-height: 480px;
+  align-items: stretch;
+  background: #ffffff;
+}
+
+/* Left blue panel */
+.vp-left-panel {
+  flex: 0 0 30%;
   position: relative;
-  z-index: 5;
+  background: #256DB5;
+  padding: 56px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
 }
 
-.value-prop-grid {
+.vp-left-title {
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 2.2vw, 34px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.vp-left-desc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.vp-read-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.vp-read-btn:hover {
+  background: #ffffff;
+  color: #1a62bb;
+}
+
+.vp-arrow {
+  font-size: 16px;
+}
+
+/* Right logo grid */
+.vp-logo-grid {
+  flex: 0 0 70%;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: 50%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
-@media (min-width: 768px) {
-  .value-prop-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.vp-logo-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  transition: filter 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+  scroll-snap-align: start;
 }
 
-.vp-card {
-  padding: 40px;
-  border-radius: 20px;
+.vp-logo-card:hover {
+  filter: brightness(1.12);
+  z-index: 2;
+  position: relative;
+}
+
+.vp-logo-text {
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 2.5vw, 36px);
   text-align: center;
-  /* Glassmorphism styling */
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  white-space: pre-line;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  user-select: none;
+}
+
+/* ── CTA ROW ── */
+.vp-cta-row {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+}
+
+.vp-cta-card {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.vp-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.vp-icon {
-  width: 80px;
-  height: 80px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 24px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  color: var(--primary-color);
+  text-align: center;
+  padding: 80px 60px;
+  gap: 0;
 }
 
-.vp-card h3 {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 16px;
+.vp-cta-blue {
+  background: #1a62bb;
 }
 
-.vp-card p {
-  font-size: 16px;
-  color: var(--text-muted);
-  line-height: 1.6;
+.vp-cta-purple {
+  background: #2a1f63;
 }
 
-/* Specific accent colors for the icons if desired */
-.vp-card:nth-child(1) .vp-icon { color: #006ADA; }
-.vp-card:nth-child(2) .vp-icon { color: #E91E63; }
-.vp-card:nth-child(3) .vp-icon { color: #00A651; }
+/* Override inherited mosaic-title for CTA */
+.vp-cta-card .mosaic-title {
+  font-size: clamp(22px, 2.5vw, 36px);
+}
+
+/* Ensure outline button text is white */
+.vp-cta-purple .btn-outline-white {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+.vp-cta-purple .btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .vp-left-panel {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vp-stories-row {
+    flex-direction: column;
+  }
+
+  .vp-left-panel {
+    flex: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 60px 32px;
+  }
+
+  .vp-logo-grid {
+    flex: none;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: 100%;
+  }
+
+  .vp-logo-card {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    scroll-snap-align: none;
+  }
+
+  .vp-logo-text {
+    font-size: 18px;
+  }
+
+  .vp-cta-row {
+    flex-direction: column;
+  }
+
+  .vp-cta-card {
+    padding: 60px 32px;
+  }
+}

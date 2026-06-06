@@ -1,0 +1,1 @@
+window.__NUXT__={layout:"BaseLayout",data:[{}],fetch:[],error:null,serverRendered:!0,routePath:"/",config:{}}

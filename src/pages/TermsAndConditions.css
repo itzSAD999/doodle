@@ -1,0 +1,99 @@
+/* TermsAndConditions.css */
+
+.terms-page {
+  font-family: var(--font-body);
+}
+
+.terms-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #0b0c10 0%, #111827 50%, #0b0c10 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.terms-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(26,98,187,0.1) 0%, transparent 60%);
+}
+
+.terms-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 40px;
+}
+
+.terms-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.terms-hero-subtitle {
+  font-size: clamp(16px, 2vw, 20px);
+  color: rgba(255,255,255,0.6);
+  font-weight: 400;
+}
+
+.terms-content {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.terms-text-block {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.terms-text-block h2 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+
+.terms-text-block h2:first-child {
+  margin-top: 0;
+}
+
+.terms-text-block p {
+  margin-bottom: 20px;
+}
+
+.terms-text-block ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.terms-text-block li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .terms-content {
+    padding: 60px 0;
+  }
+
+  .terms-container {
+    padding: 0 20px;
+  }
+}

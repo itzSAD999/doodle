@@ -1,0 +1,304 @@
+/* ContactUs.css — Premium redesign */
+
+.contactus-page {
+  font-family: var(--font-body);
+}
+
+/* Hero */
+.contactus-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(160deg, #0b0c10 0%, #111827 50%, #0b0c10 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.contactus-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 60%, rgba(26,98,187,0.12) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(26,98,187,0.06) 0%, transparent 50%);
+}
+
+.contactus-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.contactus-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 6vw, 80px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contactus-hero-title .fw-light {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contactus-hero-title .text-primary {
+  color: var(--primary-color);
+}
+
+.contactus-hero-title .fw-bold {
+  font-weight: 800;
+}
+
+.contactus-hero-subtitle {
+  font-size: clamp(18px, 2vw, 24px);
+  color: rgba(255,255,255,0.6);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Container */
+.contactus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Section Label */
+.contactus-section-label {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+/* Locations */
+.contactus-locations {
+  padding: 100px 0 80px;
+  background: #fff;
+}
+
+.contactus-loc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.contactus-loc-card {
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: 12px;
+  border: 1px solid #eef0f3;
+  background: #f8f9fb;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.contactus-loc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.06);
+  border-color: rgba(26,98,187,0.2);
+  background: #fff;
+}
+
+.contactus-loc-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.contactus-loc-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.contactus-loc-city {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+.contactus-loc-country {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.contactus-loc-details {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contactus-loc-company {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.contactus-loc-address {
+  margin-bottom: 12px;
+}
+
+.contactus-map-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  transition: opacity 0.3s ease;
+}
+
+.contactus-map-link:hover {
+  opacity: 0.7;
+}
+
+/* Form Section */
+.contactus-form-section {
+  padding: 80px 0 100px;
+  background: #f4f6f9;
+}
+
+.contactus-form-title {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111;
+  text-align: center;
+}
+
+.contactus-form-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 48px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+  border: 1px solid #eef0f3;
+}
+
+.contactus-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contactus-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.contactus-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactus-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contactus-req {
+  color: #e3191a;
+}
+
+.contactus-field input,
+.contactus-field select,
+.contactus-field textarea {
+  padding: 14px 16px;
+  border: 1px solid #dde1e6;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: #fafbfc;
+  color: #111;
+}
+
+.contactus-field input:focus,
+.contactus-field select:focus,
+.contactus-field textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(26, 98, 187, 0.08);
+}
+
+.contactus-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contactus-submit-btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  font-family: inherit;
+}
+
+.contactus-submit-btn:hover {
+  background: #144e96;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(26,98,187,0.25);
+}
+
+@media (max-width: 768px) {
+  .contactus-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contactus-form-card {
+    padding: 28px 20px;
+  }
+
+  .contactus-loc-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contactus-container {
+    padding: 0 20px;
+  }
+
+  .contactus-locations {
+    padding: 60px 0 40px;
+  }
+
+  .contactus-form-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus-loc-grid {
+    grid-template-columns: 1fr;
+  }
+}

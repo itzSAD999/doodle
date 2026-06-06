@@ -47,16 +47,16 @@ const Footer: React.FC = () => {
               <li><a href="/about">Contact Us</a></li>
               <li><a href="/success-stories">Success Stories</a></li>
               <li><a href="/blogs">Blogs</a></li>
-              <li><a href="/terms">Terms & Conditions</a></li>
-              <li><a href="/csr">CSR Policy</a></li>
+              <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+              <li><a href="/csr-policy">CSR Policy</a></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h4>Careers</h4>
             <ul>
-              <li><a href="/careers">View Openings</a></li>
-              <li><a href="/careers">Internship</a></li>
+              <li><a href="/careers/openings">View Openings</a></li>
+              <li><a href="/careers/interns">Internship</a></li>
             </ul>
           </div>
         </div>
@@ -68,10 +68,10 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="footer-socials" style={{ display: 'flex', gap: '16px', color: 'var(--primary-color)', fontWeight: 600, textTransform: 'uppercase', fontSize: '14px' }}>
-            <a href="#">insta</a>
-            <a href="#">linkedin</a>
-            <a href="#">twitter</a>
-            <a href="#">facebook</a>
+            <a href="https://www.instagram.com/doodleblue/" target="_blank" rel="noopener noreferrer">insta</a>
+            <a href="https://www.linkedin.com/company/doodleblue/" target="_blank" rel="noopener noreferrer">linkedin</a>
+            <a href="https://twitter.com/doodleblue7" target="_blank" rel="noopener noreferrer">twitter</a>
+            <a href="https://www.facebook.com/doodleblue.Innovations/" target="_blank" rel="noopener noreferrer">facebook</a>
           </div>
 
           <div className="footer-copyright">

@@ -1,0 +1,450 @@
+/* Approach.css — Premium redesign (no Bootstrap) */
+
+.approach-page {
+  font-family: var(--font-body);
+}
+
+/* Container */
+.approach-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Hero */
+.approach-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #0b0c10 0%, #111827 50%, #0b0c10 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.approach-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(26,98,187,0.1) 0%, transparent 60%);
+}
+
+.approach-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 40px;
+}
+
+.approach-title {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.approach-title-light {
+  font-weight: 300;
+}
+
+.approach-title-accent {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.approach-subtitle {
+  font-size: clamp(18px, 2vw, 24px);
+  color: rgba(255,255,255,0.5);
+  font-weight: 400;
+}
+
+/* Intro */
+.approach-intro {
+  padding: 100px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.approach-intro-text {
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.8;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.approach-highlight {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Two-Column Layout */
+.approach-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.approach-col {
+  /* just a container */
+}
+
+/* Initial Discussion */
+.approach-discussion {
+  padding: 100px 0;
+  background: #f8f9fb;
+}
+
+.approach-discussion-headline {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+}
+
+.approach-section-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.approach-section-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 28px;
+}
+
+.approach-testimonial-card {
+  background: #fff;
+  border-left: 4px solid var(--primary-color);
+  padding: 28px;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.approach-testimonial-text {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.approach-testimonial-author {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.approach-testimonial-role {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+/* Stats Section */
+.approach-stats {
+  padding: 100px 0;
+  background: #0b0c10;
+  color: #fff;
+}
+
+.approach-stats-title {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.approach-stats-number {
+  font-size: clamp(60px, 8vw, 100px);
+  font-weight: 800;
+  color: var(--primary-color);
+  display: block;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.approach-stats-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 16px;
+}
+
+.approach-stats-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 28px;
+}
+
+.approach-stats-testimonial {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 24px;
+}
+
+.approach-stats-testimonial p {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 16px;
+}
+
+.approach-stats-author h6 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.approach-stats-author small {
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+}
+
+/* Pricing Models */
+.approach-pricing {
+  padding: 100px 0;
+  background: #111827;
+  color: #fff;
+  text-align: center;
+}
+
+.approach-pricing-intro {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 600;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto 16px;
+}
+
+.approach-pricing-desc {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  max-width: 700px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+}
+
+.approach-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.approach-pricing-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 40px 24px;
+  transition: all 0.4s ease;
+}
+
+.approach-pricing-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(26,98,187,0.3);
+  transform: translateY(-4px);
+}
+
+.approach-pricing-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(26,98,187,0.2);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+.approach-pricing-card-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.approach-pricing-card-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Strategy Section */
+.approach-strategy {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.approach-strategy-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.approach-strategy-row:last-child {
+  margin-bottom: 0;
+}
+
+.approach-strategy-row.reverse {
+  direction: rtl;
+}
+
+.approach-strategy-row.reverse > * {
+  direction: ltr;
+}
+
+.approach-strategy-visual {
+  border-radius: 16px;
+  min-height: 320px;
+}
+
+.approach-strategy-title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.approach-strategy-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Methodology Section */
+.approach-methodology {
+  padding: 100px 0;
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.approach-methodology-title {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.approach-methodology-desc {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.approach-methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.approach-methodology-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 28px;
+  border: 1px solid #eef0f3;
+  text-align: left;
+  transition: all 0.4s ease;
+}
+
+.approach-methodology-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+}
+
+.approach-methodology-number {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 800;
+  color: rgba(26,98,187,0.1);
+  margin-bottom: 16px;
+}
+
+.approach-methodology-card-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.approach-methodology-card-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .approach-pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .approach-two-col {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .approach-strategy-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .approach-strategy-row.reverse {
+    direction: ltr;
+  }
+
+  .approach-strategy-visual {
+    min-height: 200px;
+  }
+
+  .approach-methodology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-container {
+    padding: 0 20px;
+  }
+
+  .approach-intro,
+  .approach-discussion,
+  .approach-stats,
+  .approach-pricing,
+  .approach-strategy,
+  .approach-methodology {
+    padding: 60px 0;
+  }
+}

@@ -1,0 +1,578 @@
+/* ═══════════════════════════════════════════════
+   GenAIPage.css — matches doodleblue.com/gen-ai/
+   ═══════════════════════════════════════════════ */
+
+.genai-page {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-body);
+}
+
+/* ── SECTION 1: HERO BANNER ── */
+.genai-banner-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 80px; /* header height */
+}
+
+.genai-banner-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.genai-banner-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.genai-banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 80px 80px 80px;
+}
+
+.genai-banner-text {
+  max-width: 600px;
+}
+
+.genai-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #006ada;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.genai-main-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(36px, 5vw, 60px);
+  text-transform: uppercase;
+  color: #121212;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.genai-main-title span {
+  display: inline;
+}
+
+.genai-subtitle {
+  font-weight: 500;
+  font-size: clamp(22px, 2.5vw, 34px);
+  text-transform: capitalize;
+  font-style: italic;
+  color: #908e8f;
+  margin-top: -4px;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.genai-consult-btn a {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 600;
+  color: #006ada;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.genai-consult-btn a:hover {
+  opacity: 0.75;
+}
+
+.genai-btn-arrow {
+  width: 50px;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+/* ── SECTION 2: BRANDS ── */
+.genai-brands-wrapper {
+  background-color: #0a1a3a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+.genai-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.genai-brands-title-img {
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.genai-brands-title-img img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.genai-brands-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.35s forwards;
+}
+
+.genai-brands-desc {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 33px;
+  color: #ffffff;
+  margin-bottom: 0;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.5s forwards;
+}
+
+/* ── SECTION 3: ALGORITHMS ── */
+.genai-algorithms-main {
+  position: relative;
+  background: #0d0d1a;
+  padding: 80px 0 120px;
+  overflow: hidden;
+}
+
+/* Decorative floating images */
+.genai-dbl1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.genai-dbl2 {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 160px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.genai-dbl3 {
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  width: 160px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.genai-dbl4 {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  width: 160px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+/* Shadow + heading */
+.genai-algo-head-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+  z-index: 2;
+}
+
+.genai-shadow-algo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 90vw;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.genai-algo-heading {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 3vw, 36px);
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  padding: 0 40px;
+}
+
+/* Algorithm row shared */
+.genai-algo-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-height: 360px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.genai-algo-row:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.genai-algo-img-col {
+  flex: 1 1 40%;
+  max-width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.genai-algo-content-col {
+  flex: 1 1 55%;
+  padding: 60px 80px;
+}
+
+/* Image wrapper  */
+.genai-algo-img-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.genai-algo-img-wrap--left {
+  background: linear-gradient(135deg, #006ada22, #006ada11);
+  border-right: 2px solid #006ada33;
+  padding: 48px 40px;
+  min-height: 360px;
+  justify-content: center;
+}
+
+.genai-algo-img-wrap--right {
+  background: linear-gradient(225deg, #006ada22, #006ada11);
+  border-left: 2px solid #006ada33;
+  padding: 48px 40px;
+  min-height: 360px;
+  justify-content: center;
+}
+
+.genai-algo-img-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #006ada;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.genai-algo-img-wrap img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Content text */
+.genai-algo-title {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+.genai-algo-sub {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.genai-algo-sub span {
+  color: #006ada;
+  font-weight: 700;
+}
+
+.genai-algo-para {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+/* ── SECTION 4: ADVANTAGES ── */
+.genai-about-container {
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+}
+
+.genai-about-left {
+  flex: 1 1 40%;
+  padding: 80px 80px 80px 80px;
+}
+
+.genai-about-right {
+  flex: 1 1 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #f7f9ff;
+  min-height: 600px;
+}
+
+.genai-about-overline {
+  font-size: 13px;
+  font-weight: 700;
+  color: #006ada;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.genai-about-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 900;
+  color: #121212;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.genai-about-desc {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 36px;
+  max-width: 460px;
+}
+
+.genai-about-cta {
+  display: inline-block;
+  background: #006ada;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.genai-about-cta:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.genai-section-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ── SECTION 5: CTA STRIP ── */
+.genai-cta-strip {
+  background: #000000;
+  border-top: 2px solid #006ada;
+  padding: 32px 80px;
+}
+
+.genai-cta-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+
+.genai-cta-strip-dot {
+  width: 10px;
+  height: 10px;
+  background: #006ada;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.genai-cta-strip-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+
+.genai-cta-email {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition: border-color 0.2s ease;
+}
+
+.genai-cta-email:hover {
+  border-color: #ffffff;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .genai-banner-content {
+    padding: 60px 40px;
+  }
+
+  .genai-banner-overlay {
+    width: 50%;
+    opacity: 0.4;
+  }
+
+  .genai-algo-row {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .genai-algo-row--right {
+    flex-direction: column-reverse;
+  }
+
+  .genai-algo-img-col {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .genai-algo-img-wrap--left,
+  .genai-algo-img-wrap--right {
+    border: none;
+    border-bottom: 1px solid #006ada33;
+    min-height: auto;
+    padding: 32px 24px;
+    width: 100%;
+  }
+
+  .genai-algo-content-col {
+    padding: 40px 32px;
+  }
+
+  .genai-about-container {
+    flex-direction: column;
+  }
+
+  .genai-about-left {
+    padding: 60px 32px;
+  }
+
+  .genai-about-right {
+    min-height: auto;
+    padding: 32px;
+    width: 100%;
+  }
+
+  .genai-cta-strip {
+    padding: 24px 32px;
+  }
+
+  .genai-cta-strip-inner {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .genai-banner-wrapper {
+    min-height: 80vh;
+  }
+
+  .genai-banner-content {
+    padding: 40px 24px;
+  }
+
+  .genai-banner-overlay {
+    width: 100%;
+    opacity: 0.15;
+  }
+
+  .genai-brands-wrapper {
+    padding: 60px 0;
+  }
+
+  .genai-container {
+    padding: 0 24px;
+  }
+
+  .genai-dbl1,
+  .genai-dbl2,
+  .genai-dbl3,
+  .genai-dbl4 {
+    width: 80px;
+  }
+
+  .genai-about-left {
+    padding: 48px 24px;
+  }
+
+  .genai-cta-strip {
+    padding: 20px 24px;
+  }
+
+  .genai-cta-strip-text {
+    font-size: 15px;
+  }
+}
